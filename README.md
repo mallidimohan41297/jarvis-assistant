@@ -1,6 +1,6 @@
 # 🤖 JARVIS - My AI Desktop Assistant
 
-Welcome to **Jarvis**! I am 9 years old, and I built this production-grade, modular AI desktop assistant using Python and the Google Gemini API. It can talk, listen, manage notes, and control apps on my Windows computer.
+Welcome to **Jarvis**! I am 17 years old, and I built this production-grade, modular AI desktop assistant using Python and the Google Gemini API. It can talk, listen, manage notes, and control apps on my Windows computer.
 
 ---
 
