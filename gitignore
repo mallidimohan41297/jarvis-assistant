@@ -1,0 +1,20 @@
+# Compiled binaries
+pms
+pms.exe
+*.o
+*.out
+
+# Dev-C++ project files
+*.dev
+*.layout
+
+# Runtime-generated data files
+students.txt
+companies.txt
+placement_report.csv
+student_report.csv
+company_report.csv
+
+# OS files
+.DS_Store
+Thumbs.db
