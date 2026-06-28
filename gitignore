@@ -1,20 +1,13 @@
-# Compiled binaries
-pms
-pms.exe
-*.o
-*.out
+__pycache__/
 
-# Dev-C++ project files
-*.dev
-*.layout
+*.pyc
 
-# Runtime-generated data files
-students.txt
-companies.txt
-placement_report.csv
-student_report.csv
-company_report.csv
+.env
 
-# OS files
-.DS_Store
-Thumbs.db
+*.log
+
+venv/
+
+.idea/
+
+.vscode/
