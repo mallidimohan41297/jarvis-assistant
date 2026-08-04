@@ -1,14 +1,8 @@
 # JARVIS – AI Desktop Assistant
 
-A modern AI-powered desktop assistant built with **Python**, **Google Gemini API**, and **CustomTkinter**, featuring an intuitive graphical interface for AI conversations, voice interaction, notes management, and browser automation.
+JARVIS is a desktop AI assistant built with **Python**, **Google Gemini API**, and **CustomTkinter**. The project combines conversational AI, voice interaction, note management, and simple desktop automation into a clean and easy-to-use application.
 
----
-
-## Overview
-
-JARVIS is a modular desktop AI assistant inspired by intelligent virtual assistants. It combines Google's Gemini AI with speech recognition and desktop automation to provide a seamless user experience.
-
-The project follows a modular architecture, making it easy to extend with new AI capabilities, voice features, productivity tools, and desktop integrations.
+The main goal of this project was to explore how different Python libraries can work together to create a practical AI assistant with a modern desktop interface. The codebase is organized into separate modules so that new features can be added without affecting the existing functionality.
 
 ---
 
@@ -16,53 +10,49 @@ The project follows a modular architecture, making it easy to extend with new AI
 
 ### AI Chat
 
-* Real-time conversation with Google Gemini
-* Context-aware chat sessions
-* Automatic error handling
-* Modern chat interface
+* Chat with Google's Gemini model in real time
+* Maintains conversation context during a session
+* Gracefully handles API and network errors
+* Simple and responsive chat interface
 
 ### Voice Assistant
 
-* Speech-to-text using SpeechRecognition
-* Text-to-speech responses using pyttsx3
-* Voice command support
-* Hands-free interaction
+* Convert speech to text using SpeechRecognition
+* Hear AI responses through text-to-speech
+* Hands-free interaction with voice commands
 
 ### Notes Manager
 
-* Create notes
+* Create personal notes
 * View saved notes
-* Delete notes
-* Local JSON-based storage
+* Delete notes when no longer needed
+* Store notes locally using JSON
 
-### Web & Applications
+### Desktop Utilities
 
-* Open websites
+* Open frequently used websites
 * Launch desktop applications
-* Browser automation
-* Quick productivity shortcuts
+* Quick shortcuts for common tasks
 
-### Modern GUI
+### Modern User Interface
 
-* Built with CustomTkinter
-* Dark theme interface
-* Responsive layout
-* Multiple functional tabs
-* Professional desktop design
+* Built entirely with CustomTkinter
+* Clean dark theme
+* Tab-based navigation
+* Responsive desktop layout
 
-### Error Handling
+### Reliability
 
-* API failure recovery
-* Network exception handling
-* Invalid API key detection
-* Request retry mechanism
-* Logging support
+* Handles invalid API keys
+* Detects network failures
+* Includes structured logging
+* Prevents application crashes with exception handling
 
 ---
 
 ## Screenshots
 
-### Main Interface
+### Home
 
 <img src="screenshots/home.png" width="900">
 
@@ -74,7 +64,7 @@ The project follows a modular architecture, making it easy to extend with new AI
 
 <img src="screenshots/voice.png" width="900">
 
-### Notes Manager
+### Notes
 
 <img src="screenshots/notes.png" width="900">
 
@@ -82,41 +72,40 @@ The project follows a modular architecture, making it easy to extend with new AI
 
 ## Tech Stack
 
-### Programming Language
+**Language**
 
 * Python 3.12+
 
-### AI
+**AI**
 
 * Google Gemini API
 * google-genai SDK
 
-### GUI
+**GUI**
 
 * CustomTkinter
 
-### Voice
+**Voice**
 
 * SpeechRecognition
 * PyAudio
 * pyttsx3
 
-### Utilities
+**Utilities**
 
 * python-dotenv
+* threading
 * logging
 * JSON
-* threading
 * webbrowser
 
 ---
 
 ## Project Structure
 
-```
+```text
 jarvis_assistant/
 
-│
 ├── ui_app.py
 ├── main.py
 ├── config.py
@@ -136,91 +125,92 @@ jarvis_assistant/
 
 ---
 
-## Installation
+## Getting Started
 
-Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/jarvis-assistant.git
 ```
 
-Move into the project
+### 2. Move into the project directory
 
 ```bash
 cd jarvis-assistant
 ```
 
-Create a virtual environment
+### 3. Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate the environment
+### 4. Activate the environment
 
-Windows
+**Windows**
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Linux/macOS
+**Linux/macOS**
 
 ```bash
 source .venv/bin/activate
 ```
 
-Install dependencies
+### 5. Install the required packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file
+### 6. Create a `.env` file
 
-```
+```env
 GEMINI_API_KEY=YOUR_API_KEY
 MODEL_NAME=gemini-2.5-flash
 ```
 
 ---
 
-## Usage
+## Running the Project
 
-Run the application
+Start the application with:
 
 ```bash
 python ui_app.py
 ```
 
-You can:
+Once the application starts, you can:
 
 * Chat with Gemini AI
 * Use voice commands
-* Save and manage notes
-* Open websites and applications
-* Experience a modern desktop assistant
+* Create and manage notes
+* Open websites and desktop applications
 
 ---
 
 ## Future Improvements
 
-* Conversation history database
-* Multiple AI providers (Gemini, OpenAI, Groq, OpenRouter)
-* Weather integration
+Some features planned for future versions include:
+
+* Persistent conversation history
+* Support for multiple AI providers
+* Weather information
 * Calendar integration
 * Email assistant
-* File management
+* File management tools
 * System monitoring
-* Plugin architecture
-* Authentication
+* Plugin support
+* User authentication
 * Cross-platform installer
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -228,18 +218,22 @@ This project is licensed under the MIT License.
 
 **Mallidi Mohan**
 
-B.Tech Mathematics & Computing
+B.Tech, Mathematics & Computing
 Indian Institute of Technology Goa
 
-GitHub:
+**GitHub**
+
 https://github.com/mallidimohan41297
 
-LinkedIn:
+**LinkedIn**
+
 https://www.linkedin.com/in/mallidimohan
 
 ---
 
 ## Acknowledgements
+
+Special thanks to the open-source community and the tools that made this project possible:
 
 * Google Gemini API
 * CustomTkinter
@@ -248,6 +242,6 @@ https://www.linkedin.com/in/mallidimohan
 
 ---
 
-## Star the Repository
+## Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project helpful or interesting, consider giving the repository a ⭐. It helps others discover the project and motivates future improvements.
